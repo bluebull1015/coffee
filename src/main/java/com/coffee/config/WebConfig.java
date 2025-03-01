@@ -20,7 +20,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // 모든 요청에 CORS 적용
             .allowedOrigins("http://localhost:3000")
-            .allowedMethods("GET", "POST", "PUT", "DELETE");
+            .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH");
 
     }
 }

@@ -16,6 +16,7 @@ public class Product {
     // 엔터티 코딩 작성시 실제 제약 조건도 고려해야 합니다.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "product_id")
     private Long id ;
 
     @Column(nullable = false)
